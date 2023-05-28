@@ -1,0 +1,97 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&family=Reem+Kufi+Ink&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Reem+Kufi+Ink&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+}
+
+.btn-link {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-link:hover {
+    color: rgb(122, 122, 122);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Bakbak One', cursive;
+    text-transform: uppercase;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #f8f9fa;
+    font-family: 'Bakbak One', cursive;
+    text-transform: uppercase;
+}
+
+
+/* Search textarea */
+.single-line-input {
+    border: none;
+    border-bottom: 1px solid #000; /* Cor da linha preta */
+    background-color: #f8f9fa;
+    padding: 5px;
+    outline: none;
+    width: 300px;
+    transition: border-bottom-color 0.3s;
+}
+
+.single-line-input:focus {
+    background-color: #f8f9fa;
+    border-bottom-color: #000;
+    outline: none; /* Disables the outline */
+    box-shadow: none; /* Disables any box shadow */
+}
+
+#bottom{
+    font-family: 'Bakbak One', cursive;
+}
+
+/* Carousel */
+#carousel {
+    background-color: #f8f9fa;
+} 
+
+/* Services Section */
+#services {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    background-color: #f8f9fa;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+}
+
+form label {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}

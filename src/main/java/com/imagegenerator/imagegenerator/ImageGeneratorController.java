@@ -47,14 +47,14 @@ public class ImageGeneratorController {
         // Handle the form submission
         System.out.println("Textarea content: " + content);
         
-        // Add your logic here to process the content and generate the image URL
+        
         String imageUrl = generateImage(content);
         System.out.println("URL IMAGEM: " + imageUrl);
         
         // Add the image URL as a model attribute
         model.addAttribute("imageUrl", imageUrl);
         
-        return "redirect:/"; // Redirect to index.html
+        return "index"; // Redirect to index.html
     }
 
 
@@ -70,6 +70,7 @@ public class ImageGeneratorController {
     
                 String requestBody = "{\"prompt\": \"" + input + "\", \"size\": \"512x512\"}";
                 HttpEntity<String> entity = new HttpEntity<>(requestBody, headers);
+                System.out.println("HTTP BODY: " + entity.toString());
     
                 ResponseEntity<String> response = restTemplate.exchange(API_URL, HttpMethod.POST, entity, String.class);
     
